@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<title>Movie Review Website</title>
+	<style>
+		body{
+			font-family:Arial;
+			background:gray;
+			color:black;
+			text-align:center;
+			padding:20px;
+		}
+		header{
+			background:black;
+			color:white;
+		}
+		nav a{
+  			color: white;
+ 			margin: 10px 10px;
+			padding:10px;
+			font-family:calibiri;
+			font-size:30px;
+  			text-decoration: none;
+		}
+		header h1{
+			font-family:algerian;
+		}
+		section{
+			display:flex;
+			flex-wrap:wrap;
+			padding:20px;
+			justify-content:center;
+		}
+		article h2{
+			font-family:algerian;
+		}
+		.movie{
+			background:black;
+			margin-bottom:20px;
+			color:white;
+			padding:15px;
+			border-left: 5px;
+  			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  			transition: transform 0.3s;
+		}
+		.movie:hover {
+			transform: scale(1.02);
+			box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Optional glow effect */
+		}
+		.movie img{		
+			margin-top:10px;
+			margin-bottom:10px;
+			border-radius:8px;
+		}
+		form{
+			background:black;
+			color:white;
+			border:1px;
+			padding-bottom:20px;
+			width:300px;
+			margin-top:20px;
+		}
+		form h3{
+			font-family:algerian;
+		}
+		form input,form textarea{
+			width:80%;
+			padding:8px;		
+			margin:10px 0;		
+			border:none;
+			border-radius:4px;
+		}
+		form button{
+			padding:10px 20px;
+			font-weight:bold;
+			background:white;
+			border:none;		
+			border-radius:5px;
+			cursor:pointer;		
+		}
+		form button:hover{
+			background:#ccc;
+		}
+		footer{
+			background:black;
+			color:white;
+			text-align:center;
+			padding:10px;
+			position:relative;
+			width:100%;
+			bottom:0;
+		}
+		@media (max-width:600px){		
+			body{
+			background:white;
+			color:black;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+  			<a href="#">Home</a> |
+  			<a href="#">Reviews</a> |
+  			<a href="#">Contact</a>
+		</nav>
+		<h1>Movie Review</h1>	
+		<p>Rating the movies</p>
+	</header>
+	<section>
+		<article class="movie">
+			<h2>Avengers-Endgame</h2>
+			<img src="avengers-endgame.jpg" alt="Avengers Poster" width="200" height="400">
+			<p><strong>Genre:</strong>Action,Sci-Fi</p>
+			<p><strong>Review:</strong>"A breathtaking culmination of a decade-long journey — Avengers: Endgame delivers epic battles, emotional depth, and fan service at its finest. A masterpiece of superhero storytelling."</p>
+			<p><strong>Rating:</strong>★★★★★</p>
+		</article>
+		<article class="movie">
+			<h2>Pirates of the Caribbean: The Curse of the Black Pearl</h2>
+			<img src="pirates-of-the-caribbean.jpg" alt="Pirates of the caribbean" width="200" height="400">
+			<p><strong>Genre:</strong>Action,Comedy</p>
+			<p><strong>Review:</strong>"An exhilarating adventure led by the unforgettable Captain Jack Sparrow — filled with charm, swashbuckling action, and supernatural intrigue that redefined pirate films."</p>
+			<p><strong>Rating:★★★★</strong></p>
+		</article>
+		<form>
+  			<h3>Submit a Review</h3>
+  			<input type="text" placeholder="Movie Name"><br><br>
+  			<textarea placeholder="Write your review"></textarea><br><br>
+  			<button type="submit">Submit Review</button>
+		</form>
+	</section>
+	<footer>
+  		 <p>&copy; 2025 My Movie Reviews</p>
+		 <p><strong>Contact:</strong>abcd@gmail.com</p>
+        </footer>
+</body>
+</html>
